@@ -15,14 +15,14 @@ header {
   background-image: url("images/header-bg.png");
   min-height: 15vh;
   background-size: cover;
-  padding-left: 30%;
+  padding-left: 26%;
 }
 
 p {
   font-size: small;
   color: white;
   margin-top: -1.5em;
-  margin-left: 10%;
+  margin-left: 7%;
 }
 
 main {
