@@ -1,0 +1,200 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto Slab", serif;
+}
+
+header {
+  padding: 0;
+  background-image: url("images/header-bg.png");
+  background-size: cover;
+  padding-left: 15%;
+}
+
+p {
+  font-size: small;
+  color: white;
+  margin-top: -2.2em;
+  margin-left: 15%;
+}
+
+main {
+  margin: 0;
+  padding: 0;
+}
+
+.span-container {
+  display: flex;
+  justify-content: center;
+  gap: 1em;
+  margin: 0;
+}
+
+.span-container div {
+  padding: 1em 0;
+  display: flex;
+  font-size: 2rem;
+  line-height: 0.5;
+}
+
+span {
+  margin-top: -0.8em;
+  font-size: 1.8rem;
+  color: white;
+  display: inline-block;
+  position: relative;
+  transform-origin: bottom center;
+  transition: transform 0.3s cubic-bezier(0.6, 0.4, 0, 1);
+}
+
+span:hover {
+  animation: swing 0.8s cubic-bezier(0.6, 0.4, 0, 1) forwards;
+}
+
+@keyframes swing {
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(15deg);
+  }
+  50% {
+    transform: rotate(-15deg);
+  }
+  75% {
+    transform: rotate(8deg);
+  }
+  90% {
+    transform: rotate(-5deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+form {
+  padding: 1em 0;
+  display: flex;
+  justify-content: center;
+  gap: 0.7em;
+}
+
+input,
+select,
+option,
+button {
+  font-family: inherit;
+}
+
+select {
+  width: 43vw;
+}
+
+input {
+  outline: none;
+  border: none;
+  background: none;
+  width: 10vw;
+}
+
+.palette-container {
+  display: grid;
+}
+
+.color-container {
+  width: 100%;
+  height: 50vh;
+}
+
+.color {
+  width: 98vw;
+  height: 40vh;
+}
+
+.color-text {
+  text-align: center;
+  cursor: pointer;
+  margin: 0;
+  padding-top: 1em;
+}
+
+button {
+  color: white;
+  padding: 0.5em 1em;
+  font-family: inherit;
+  background-color: #436436;
+  font-weight: bold;
+  border: none;
+}
+
+button:hover {
+  transform: scale(1.05);
+  transition: 0.2s;
+}
+
+button:active {
+  transform: scale(0.95);
+  transition: 0.1s;
+}
+
+@media (min-width: 380px) {
+  .span-container {
+    gap: 2em;
+  }
+
+  header {
+    min-height: 28vh;
+    text-align: center;
+    padding-left: 0;
+  }
+
+  p {
+    font-size: 1.5rem;
+    margin: 0;
+  }
+
+  span {
+    font-size: 5rem;
+    margin-top: 0.3em;
+  }
+
+  input,
+  select,
+  option,
+  button {
+    font-size: 1rem;
+  }
+
+  select {
+    width: 15vw;
+  }
+
+  input {
+    width: 3vw;
+    height: 5vh;
+  }
+
+  form {
+    justify-content: space-evenly;
+  }
+
+  .palette-container {
+    display: flex;
+  }
+
+  .color {
+    width: 16.65vw;
+    height: 55vh;
+  }
+
+  .color-text {
+    font-size: 1.5rem;
+    padding-top: 0.5em;
+  }
+}

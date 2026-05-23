@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" type="image/png" href="images/logo.png" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Color Scheme Generator</title>
+  </head>
+  <body>
+    <header>
+      <div class="span-container">
+        <div>
+          <span>C</span>
+          <span>r</span>
+          <span>o</span>
+          <span>c</span>
+          <span>O</span>
+          <span>l</span>
+          <span>o</span>
+          <span>r</span>
+        </div>
+
+        <div>
+          <span>G</span>
+          <span>e</span>
+          <span>n</span>
+          <span>e</span>
+          <span>r</span>
+          <span>a</span>
+          <span>t</span>
+          <span>o</span>
+          <span>r</span>
+        </div>
+      </div>
+      <p>Instant Palettes, Chromatic Creation</p>
+    </header>
+
+    <main>
+      <form>
+        <input type="color" aria-label="Input Color" id="type-color" />
+        <select aria-label="Mode Selector" id="mode">
+          <option value="monochrome">Monochrome</option>
+          <option value="monochrome-dark">Monochrome-dark</option>
+          <option value="monochrome-light">Monochrome-light</option>
+          <option value="analogic">Analogic</option>
+          <option value="complement">Complement</option>
+          <option value="analogic-complement">Analogic-complement</option>
+          <option value="triad">Triad</option>
+          <option value="quad">Quad</option>
+        </select>
+        <button type="submit">Get Color Scheme</button>
+      </form>
+
+      <div class="palette-container">
+        <div class="color-container">
+          <div class="color"></div>
+          <h3 class="color-text"></h3>
+        </div>
+        <div class="color-container">
+          <div class="color"></div>
+          <h3 class="color-text"></h3>
+        </div>
+        <div class="color-container">
+          <div class="color"></div>
+          <h3 class="color-text"></h3>
+        </div>
+        <div class="color-container">
+          <div class="color"></div>
+          <h3 class="color-text"></h3>
+        </div>
+        <div class="color-container">
+          <div class="color"></div>
+          <h3 class="color-text"></h3>
+        </div>
+        <div class="color-container">
+          <div class="color"></div>
+          <h3 class="color-text"></h3>
+        </div>
+      </div>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
