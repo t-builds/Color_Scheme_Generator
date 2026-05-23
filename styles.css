@@ -33,7 +33,7 @@ main {
 .span-container {
   display: flex;
   justify-content: center;
-  gap: 1em;
+  gap: 0.5em;
   margin: 0;
 }
 
