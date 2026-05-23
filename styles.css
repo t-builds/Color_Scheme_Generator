@@ -138,7 +138,7 @@ button:active {
   transition: 0.1s;
 }
 
-@media (min-width: 380px) {
+@media (min-width: 430px) {
   .span-container {
     gap: 2em;
   }
