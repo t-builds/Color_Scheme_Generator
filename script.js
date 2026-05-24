@@ -16,7 +16,7 @@ document.querySelectorAll("span").forEach((span) => {
     setTimeout(() => {
       span.style.color = "white";
       span.style.animation = "none";
-    }, 1200);
+    }, 1500);
   });
 });
 
