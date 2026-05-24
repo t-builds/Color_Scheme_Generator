@@ -9,9 +9,14 @@ document.querySelectorAll("span").forEach((span) => {
     const randomColor = `hsl(${Math.random() * 360}, 80%, 60%)`;
     span.style.color = randomColor;
 
+    span.style.animation = "none";
+    span.offsetHeight; // force reflow
+    span.style.animation = "swing 1.2s cubic-bezier(0.4, 0, 0.2, 1) forwards";
+
     setTimeout(() => {
       span.style.color = "white";
-    }, 800); // match your animation duration
+      span.style.animation = "none";
+    }, 1200);
   });
 });
 
