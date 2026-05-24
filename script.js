@@ -5,22 +5,22 @@ const colorDivs = document.querySelectorAll(".color");
 const colorTextDivs = document.querySelectorAll(".color-text");
 
 document.querySelectorAll("span").forEach((span) => {
-  span.addEventListener("mouseenter", () => {
+  span.addEventListener("mouseenter", function () {
     const randomColor = `hsl(${Math.random() * 360}, 80%, 60%)`;
     span.style.color = randomColor;
 
     span.style.animation = "none";
-    span.offsetHeight; // force reflow
+    span.offsetHeight;
     span.style.animation = "swing 1.2s cubic-bezier(0.4, 0, 0.2, 1) forwards";
 
-    setTimeout(() => {
+    setTimeout(function () {
       span.style.color = "white";
       span.style.animation = "none";
     }, 2000);
   });
 });
 
-form.addEventListener("submit", async function (e) {
+form.addEventListener("submit", function (e) {
   e.preventDefault();
 
   let colorsArray = [];
@@ -41,7 +41,7 @@ form.addEventListener("submit", async function (e) {
     });
 });
 
-document.querySelectorAll(".color-text").forEach((el) => {
+document.querySelectorAll(".color-text").forEach(function (el) {
   el.addEventListener("click", () => {
     const original = el.textContent.trim();
     navigator.clipboard.writeText(original);
